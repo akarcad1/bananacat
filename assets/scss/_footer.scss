@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+  ## main-footer
+--------------------------------------------------------------*/
+
+.main-footer {
+  padding: 50px 0px;
+  background-color: $primary-color;
+  text-align: center;
+  @media only screen and (max-width: 767px) {
+    padding: 30px 0px;
+  }
+  .logo-footer {
+    max-width: 350px;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 767px) {
+      max-width: 300px;
+    }
+  }
+}
+
+.social-links {
+  a {
+    &:not(:last-child){
+      margin-right: 20px;
+      @media only screen and (max-width: 767px) {
+        margin-right: 13px;
+      }
+    }
+    img {
+      height: 45px;
+      @media only screen and (max-width: 767px) {
+        height: 35px;
+      }
+    }
+    transition: all .2s ease-in;
+    &:hover{
+      transform: translateY(-4px);
+    }
+  }
+}
+
